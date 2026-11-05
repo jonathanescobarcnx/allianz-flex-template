@@ -26,7 +26,7 @@ on:
 jobs:
   terraform_deploy:
     environment: ${{ inputs.environment }}
-    runs-on: flex-deploy
+    runs-on: ubuntu-latest
     name: Terraform
     env:
       ENCRYPTION_KEY: ${{ secrets.TF_ENCRYPTION_KEY }}
